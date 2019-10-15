@@ -27,7 +27,7 @@ function kebabToSnake(str){
     var val = str.indexOf("-");
     var snake;
     if(val > 0){
-        snake = str.replace("-","_");
+        snake = str.replace(/-/g,"_");
         return snake;
     } else{
         return str;
