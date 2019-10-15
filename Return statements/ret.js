@@ -18,3 +18,14 @@ function factorial(num1){
         return x;
     }
 }
+
+function kebabToSnake(str){
+    var val = str.indexOf("-");
+    var snake;
+    if(val > 0){
+        snake = str.replace("-","_");
+        return snake;
+    } else{
+        return str;
+    }
+}
